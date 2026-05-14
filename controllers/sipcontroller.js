@@ -1,4 +1,4 @@
-const db = require("../utility/dbManager");
+const db = require("../utility/dbmanager");
 
 exports.createSip = (req, res) => {
     const { sip_id, investor_id, portfolio_id, fund_id, sip_amount, sip_frequency, sip_execution_date, start_date, end_date, sip_status } = req.body;

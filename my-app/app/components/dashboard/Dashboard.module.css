@@ -1,0 +1,107 @@
+.dashboardContainer {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: 1fr;
+}
+
+.summaryGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.summaryCard {
+  padding: 1.3rem;
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.cardLabel {
+  margin: 0 0 0.55rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.cardValue {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cardSection {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.cardSection h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.cardDescription {
+  margin: 0 0 1rem;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border-radius: 1rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 740px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table th {
+  color: #475569;
+  font-weight: 700;
+}
+
+.table tr:hover {
+  background: #f8fafc;
+}
+
+.networthBox {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.networthValue {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0c4a6e;
+}
+
+.errorMessage {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.loadingMessage {
+  color: #334155;
+}

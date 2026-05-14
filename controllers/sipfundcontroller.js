@@ -1,4 +1,4 @@
-const db = require("../utility/dbManager");
+const db = require("../utility/dbmanager");
 
 
 exports.createFund = (req, res) => {

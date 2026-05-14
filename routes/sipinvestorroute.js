@@ -8,19 +8,23 @@ const sipController = require("../controllers/sipcontroller");
 router.post("/login", sipinvestorController.login);
 router.get("/details", sipinvestorController.getDetails);
 
-router.post("/api/investors", sipinvestorController.createInvestor);
-router.get("/api/investors/:investorId", sipinvestorController.getInvestorById);
-router.get("/api/investors/:investorId/holdings", sipinvestorController.getHoldings);
-router.get("/api/investors/:investorId/networth", sipinvestorController.getNetworth);
+// --- Required 4 APIs Consolidated ---
+router.post("/investors", sipinvestorController.createInvestor);
+router.get("/investors", sipinvestorController.getAllInvestors);
+router.get("/investors/:investor_id", sipinvestorController.getInvestorById);
+router.get("/investors/:investor_id/holdings", sipinvestorController.getHoldings);
+router.get("/investors/:investor_id/networth", sipinvestorController.getNetworth);
+router.get("/transactions", sipinvestorController.getAllTransactions);
+// ------------------------------------
 
-router.post("/api/funds", sipfundController.createFund);
-router.get("/api/funds", sipfundController.getFunds);
-router.put("/api/funds/:fundId/nav", sipfundController.updateNav);
+router.post("/funds", sipfundController.createFund);
+router.get("/funds", sipfundController.getFunds);
+router.put("/funds/:fundId/nav", sipfundController.updateNav);
 
-router.post("/api/sips", sipController.createSip);
-router.post("/api/sip", sipController.createSip); 
-router.get("/api/sips/:sipId", sipController.getSipById);
-router.post("/api/sips/:sipId/process", sipController.processSipInstallment);
-router.get("/api/sips/:sipId/transactions", sipController.getSipTransactions);
+router.post("/sips", sipController.createSip);
+router.post("/sip", sipController.createSip); 
+router.get("/sips/:sipId", sipController.getSipById);
+router.post("/sips/:sipId/process", sipController.processSipInstallment);
+router.get("/investors/sips/:sipId/transactions", sipController.getSipTransactions);
 
 module.exports = router;

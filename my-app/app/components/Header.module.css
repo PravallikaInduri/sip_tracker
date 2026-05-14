@@ -1,0 +1,28 @@
+.header {
+  padding: 1rem 1.25rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.overline {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin: 0;
+  color: #0f172a;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  color: #475569;
+  line-height: 1.75;
+}

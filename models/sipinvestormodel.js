@@ -1,8 +1,8 @@
 const investors=[
     {
-        name: "Saranya",
-        email: "saranya@gmail.com",
-        password: "saranya2005",
+        name: "Pravallika",
+        email: "pravallika@gmail.com",
+        password: "pravallika2005",
         mobile: "9876543210",
         portfolio: [
             {name:"ICICI MF",price:4000,quantity:1000},
